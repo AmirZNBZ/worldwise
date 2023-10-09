@@ -1,13 +1,15 @@
-import Product from "./pages/Product/Product";
+import Login from "./pages/Login/Login";
+import City from "./components/City/City";
+import { useEffect, useState } from "react";
 import Pricing from "./pages/Pricing/Pricing";
+import Product from "./pages/Product/Product";
 import Homepage from "./pages/Homepage/Homepage";
 import AppLayout from "./pages/AppLayout/AppLayout";
+import CityList from "./components/CityList/CityList";
 import PageNotFound from "./pages/Page-notFound/PageNotFound";
 import CountryList from "./components/CountryList/CountryList";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Login from "./pages/Login/Login";
-import CityList from "./components/CityList/CityList";
-import { useEffect, useState } from "react";
+import Form from "./components/Form/Form";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 const BASE_URL = "http://localhost:8000";
 
@@ -41,17 +43,18 @@ function App() {
         <Route path="app" element={<AppLayout />}>
           <Route
             index
-            element={<CityList cities={cities} isLoading={isLoading} />}
+            element={<Navigate replace to='cities' />}
           />
           <Route
             path="cities"
             element={<CityList cities={cities} isLoading={isLoading} />}
           />
+          <Route path="cities/:id" element={<City />} />
           <Route
             path="countries"
             element={<CountryList cities={cities} isLoading={isLoading} />}
           />
-          <Route path="form" element={<p>form</p>} />
+          <Route path="form" element={<Form />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
