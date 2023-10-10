@@ -3,7 +3,10 @@ import Spinner from "../Spinner/Spinner";
 import PropTypes from "prop-types";
 import CityItem from "../CityItem/CityItem";
 import Message from "../Message/Message";
-function CityList({ cities, isLoading }) {
+import { useCities } from "../../contexts/CitiesContext";
+function CityList() {
+  const { cities, isLoading } = useCities();
+
   if (isLoading) return <Spinner />;
 
   if (!cities.length)
