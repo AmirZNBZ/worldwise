@@ -92,8 +92,8 @@ function DetectClick() {
 ChangeCenter.propTypes = {
   position: propTypes.arrayOf(
     propTypes.shape({
-      lat: propTypes.number.isRequired,
-      lng: propTypes.number.isRequired,
+      lat: propTypes.string.isRequired,
+      lng: propTypes.string.isRequired,
     })
   ),
 };
