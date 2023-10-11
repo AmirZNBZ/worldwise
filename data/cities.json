@@ -37,40 +37,16 @@
       "id": 98443197
     },
     {
-      "cityName": "Gargilesse-Dampierre",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2023-10-11T11:02:02.034Z",
-      "notes": "tr",
+      "cityName": "Enguera",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-10-11T13:16:52.139Z",
+      "notes": "test",
       "position": {
-        "lat": "46.49839225859763",
-        "lng": "1.6479492187500002"
+        "lat": "38.976492485539424",
+        "lng": "-0.8349609375000001"
       },
       "id": 98443198
-    },
-    {
-      "cityName": "Sault",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2023-10-11T11:20:41.677Z",
-      "notes": "er",
-      "position": {
-        "lat": "44.10336537791152",
-        "lng": "5.3173828125"
-      },
-      "id": 98443199
-    },
-    {
-      "cityName": "Gharyan",
-      "country": "Libya",
-      "emoji": "🇱🇾",
-      "date": "2023-10-11T11:23:28.905Z",
-      "notes": "gharyan",
-      "position": {
-        "lat": "30.977609093348686",
-        "lng": "13.359375000000002"
-      },
-      "id": 98443200
     }
   ]
 }
